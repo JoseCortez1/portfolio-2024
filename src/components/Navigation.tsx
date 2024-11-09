@@ -47,7 +47,7 @@ const Navigation: FC<{ options: NavigationProps[] }> = ({ options }) => {
             : "hidden "
         } `}
       >
-        <ul className="flex flex-col justify-center">
+        <ul className="flex flex-col justify-center sm:flex-row ">
           {options.map((option: NavigationProps) => (
             <li className="flex gap-4 " key={option.key}>
               <HeaderItem {...option} />
