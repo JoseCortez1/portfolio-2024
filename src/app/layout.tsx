@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import HeaderItem from "@/components/HeaderItem";
 import Navigation from "@/components/Navigation";
 
 export const metadata: Metadata = {
@@ -37,10 +36,20 @@ export default function RootLayout({
             </div>
             <Navigation
               options={[
-                { text: "home", link: "#home", key: "1" },
-                { text: "works", link: "#works", key: "2" },
-                { text: "about me", link: "#about-me", key: "3" },
-                { text: "contacts", link: "#contacts", key: "4" },
+                { text: "home", link: "#home", key: "1", active: false },
+                { text: "works", link: "#works", key: "2", active: false },
+                {
+                  text: "about me",
+                  link: "#about-me",
+                  key: "3",
+                  active: false,
+                },
+                {
+                  text: "contacts",
+                  link: "#contacts",
+                  key: "4",
+                  active: false,
+                },
               ]}
             />
           </nav>
