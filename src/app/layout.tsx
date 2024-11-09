@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import HeaderItem from "@/components/HeaderItem";
+import Navigation from "@/components/Navigation";
 
 export const metadata: Metadata = {
   title: "JoseCortez1",
@@ -13,9 +15,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={``}>
-        <div className="bg-primary w-full h-screen">
-          <nav>
+      <body className="bg-primary w-full h-screen">
+        <div className=" max-w-6xl mx-auto">
+          <nav className="flex items-center justify-between  px-5 relative h-[50px]">
             <div>
               <svg
                 width="16"
@@ -33,19 +35,14 @@ export default function RootLayout({
               </svg>
               <span className=" font-bold text-sm">Edu</span>
             </div>
-            <ul>
-              <li>
-                <a href="#home">home</a>
-                <a href="#works">works</a>
-                <a href="#about-me">about me</a>
-                <a href="#contacts">contacs</a>
-              </li>
-              {/* 
-              <li>
-                Todo, list lang 
-              </li>
-              */}
-            </ul>
+            <Navigation
+              options={[
+                { text: "home", link: "#home", key: "1" },
+                { text: "works", link: "#works", key: "2" },
+                { text: "about me", link: "#about-me", key: "3" },
+                { text: "contacts", link: "#contacts", key: "4" },
+              ]}
+            />
           </nav>
           {children}
         </div>
