@@ -16,7 +16,7 @@ export default function RootLayout({
 		<html lang='en'>
 			<body className='bg-primary w-full h-screen'>
 				<div className=' max-w-6xl mx-auto px-4 sm:px-5 lg:px-10'>
-					<nav className='flex items-center justify-between  px-5 relative h-[50px]'>
+					<nav className='flex items-center justify-between  px-5 relative h-[50px] z-[1]'>
 						<div className='flex gap-2'>
 							<svg
 								width='16'
