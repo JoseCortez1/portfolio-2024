@@ -2,9 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+/* 
+*,*::after,*::before{
+  outline: 1px dotted red;
+} */
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #171717;    
+    --h-header: 3rem;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,4 +26,8 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+  @apply max-w-6xl mx-auto px-4 sm:px-5 lg:px-10;
 }

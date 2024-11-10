@@ -11,9 +11,12 @@ const config: Config = {
       fontFamily:{
         sans: ['var(--font-fira-code)']
       },
+      screens: {
+        'sm': '360px',
+      },
       colors: {
         primary:"#282C33",
-        secondary:"#C778DD",
+        secondary:"rgb(101, 60, 224)",
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
