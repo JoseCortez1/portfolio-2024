@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily:{
+        sans: ['var(--font-fira-code)']
+      },
       colors: {
         primary:"#282C33",
         secondary:"#C778DD",

@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
+import { Fira_Code } from "next/font/google";
 
 export const metadata: Metadata = {
 	title: "JoseCortez1",
 	description: "Portfolio of Jose Cortez",
 };
+
+const fira_code = Fira_Code({
+	subsets: ["latin"],
+	variable: "--font-fira-code",
+});
 
 export default function RootLayout({
 	children,
@@ -14,7 +20,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body className='bg-primary w-full h-screen'>
+			<body
+				className={`bg-primary w-full h-screen ${fira_code.variable} font-sans`}
+			>
 				<div className=' max-w-6xl mx-auto px-4 sm:px-5 lg:px-10'>
 					<nav className='flex items-center justify-between  px-5 relative h-[50px] z-[1]'>
 						<div className='flex gap-2'>
