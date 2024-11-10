@@ -1,22 +1,39 @@
 "use client";
-import React, { FC, useEffect, useState } from "react";
+import React, { FC, useRef, useEffect, useState } from "react";
 import HeaderItem from "./HeaderItem";
 import { NavigationProps } from "../../types";
 
 const Navigation: FC<{ options: NavigationProps[] }> = ({ options }) => {
   const [openModal, setOpenModal] = useState(false);
+  const openModalRef = useRef(false);
+
+  const handleResize = () => {
+    const windowWidth = window.innerWidth;
+    const body = document.querySelector("body");
+    if (body) {
+      if (windowWidth < 649 && openModalRef.current) {
+        body.style.overflow = "hidden";
+      } else {
+        body.style.overflow = "auto";
+      }
+    }
+  };
 
   useEffect(() => {
     if (window) {
-      const handleResize = () => {
-        const windowWidth = window.innerWidth;
-        console.log("Window width: ", typeof windowWidth, windowWidth);
-        if (windowWidth < 649) {
-        }
-      };
       window.addEventListener("resize", handleResize);
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
     }
   }, []);
+
+  useEffect(() => {
+    if (window) {
+      openModalRef.current = openModal;
+      handleResize();
+    }
+  }, [openModal]);
 
   return (
     <div className="">
@@ -43,14 +60,14 @@ const Navigation: FC<{ options: NavigationProps[] }> = ({ options }) => {
       <div
         className={`sm:block sm:static sm:w-fit sm:h-auto ${
           openModal
-            ? "absolute top-[50px] left-0 w-screen h-[calc(100vh-_50px)] bg-blue-300"
+            ? "absolute top-[50px] -left-4 w-screen h-[calc(100vh-_50px)] bg-primary"
             : "hidden "
         } `}
       >
         <ul className="flex flex-col justify-center sm:flex-row ">
           {options.map((option: NavigationProps) => (
             <li className="flex gap-4 " key={option.key}>
-              <HeaderItem {...option} />
+              <HeaderItem {...option} key={`header-${option.key}`} />
             </li>
           ))}
           {/* 
