@@ -62,11 +62,11 @@ const Navigation: FC<{ options: NavigationProps[] }> = ({ options }) => {
 			<div
 				className={`md:block md:static md:w-fit md:h-auto ${
 					openModal
-						? "container absolute  top-[var(--h-header)] left-0 w-screen h-[calc(100vh-var(--h-header))] bg-primary"
+						? "container md:mx-0 absolute  top-[var(--h-header)] left-0 w-screen h-[calc(100vh-var(--h-header))] bg-primary"
 						: "hidden "
 				} `}
 			>
-				<ul className='flex flex-col justify-center md:flex-row '>
+				<ul className='flex flex-col justify-center md:flex-row  md:gap-4'>
 					{options.map((option: NavigationProps) => (
 						<li className='flex gap-4 ' key={option.key}>
 							<HeaderItem

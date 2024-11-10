@@ -5,10 +5,10 @@ import logoOutline from "../resources/svg/logo-outline.svg";
 import { CURRENT_PROYECT } from "@/utils/globals";
 const Hero = () => {
 	return (
-		<div className='grid grid-cols-1 lg:grid-cols-2 min-h-[calc(100dvh-_var(--h-header))]'>
-			<div className='self-end pb-8'>
+		<div className='grid grid-cols-1 lg:grid-cols-2 lg:items-center min-h-[calc(100dvh-_var(--h-header))]'>
+			<div className='self-end lg:self-center pb-8'>
 				<h2 className='text-2xl sm:text-4xl text-white font-semibold mb-8 leading-normal'>
-					[Edu |
+					[Eduardo |
 					<strong className='text-secondary '>
 						Next.js & Nuxt.js
 					</strong>{" "}
