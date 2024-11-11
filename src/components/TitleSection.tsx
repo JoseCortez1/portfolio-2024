@@ -14,10 +14,12 @@ const TitleSection: FC<Partial<TitleSectionProps>> = ({
 }) => {
 	return (
 		<h2 className={`${className}`}>
-			<span className='text-secondary '>#</span>
+			<span className='text-secondary '>{prefix}</span>
 			{text}
 			<span className='inline-block h-2 w-full bg-secondary'></span>
 			{sufix}
 		</h2>
 	);
 };
+
+export default TitleSection;
