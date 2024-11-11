@@ -5,7 +5,7 @@ import logoOutline from "../resources/svg/logo-outline.svg";
 import dottedBox from "../resources/svg/dotted-box.svg";
 import { CURRENT_PROYECT } from "@/utils/globals";
 import Button from "./Button";
-import SocialMedia from "./SocialMedia";
+
 const Hero = () => {
 	return (
 		<div className='relative grid grid-cols-1 lg:grid-cols-2 lg:items-center min-h-[calc(100dvh-_var(--h-header))] '>

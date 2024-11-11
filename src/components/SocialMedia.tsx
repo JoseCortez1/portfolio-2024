@@ -2,12 +2,12 @@ import React from "react";
 
 const SocialMedia = () => {
 	return (
-		<div className='absolute -top-[var(--h-header)] left-2 z-50  flex-col items-center hidden md:flex '>
+		<div className='absolute -top-[var(--h-header)] left-2 z-50  flex-col gap-1 items-center hidden md:flex '>
 			<div className='w-[2px] h-80 bg-complementary'></div>
-			<a href='https://github.com/JoseCortez1'>
+			<a href='https://github.com/JoseCortez1' className='group'>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'
-					className='w-8 h-8'
+					className='w-6 h-6'
 					viewBox='0 0 24 24'
 				>
 					<mask
@@ -24,7 +24,7 @@ const SocialMedia = () => {
 					</mask>
 					<g
 						fill='none'
-						className='stroke-complementary'
+						className='stroke-complementary group-hover:stroke-secondary'
 						strokeLinecap='round'
 						strokeLinejoin='round'
 						strokeWidth='2'
@@ -63,15 +63,15 @@ const SocialMedia = () => {
 					</g>
 				</svg>
 			</a>
-			<a href='mailto:jose.vazcortez@gmail.com'>
+			<a href='mailto:jose.vazcortez@gmail.com' className='group'>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'
-					className='w-8 h-8'
+					className='w-6 h-6'
 					viewBox='0 0 24 24'
 				>
 					<g
 						fill='none'
-						className='stroke-complementary'
+						className='stroke-complementary group-hover:stroke-secondary'
 						strokeLinecap='round'
 						strokeLinejoin='round'
 						strokeWidth='2'
@@ -104,15 +104,15 @@ const SocialMedia = () => {
 					</g>
 				</svg>
 			</a>
-			<a href='mailto:3329330193'>
+			<a href='mailto:3329330193' className='group'>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'
-					className='w-8 h-8'
+					className='w-6 h-6'
 					viewBox='0 0 24 24'
 				>
 					<path
 						fill='none'
-						className='stroke-complementary'
+						className='stroke-complementary group-hover:stroke-secondary'
 						strokeDasharray='64'
 						strokeDashoffset='64'
 						strokeLinecap='round'
