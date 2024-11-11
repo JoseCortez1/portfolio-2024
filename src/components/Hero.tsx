@@ -25,7 +25,7 @@ const Hero = () => {
 					SEO-optimized web experiences, always focused on maintaining
 					the highest standards of quality and performance."] */}
 				</p>
-				<Button extraClassName='my-4 lg:my-8'>Contact me!!</Button>
+				<Button className='my-4 lg:my-8'>Contact me!!</Button>
 			</div>
 			<div className='relative flex flex-col justify-end min-h-[40vh] lg:mb-[30%] mt-auto'>
 				<Image

@@ -4,19 +4,19 @@ type ButtonProps = {
 	children: ReactNode;
 	icon?: string;
 	type?: "primary" | "secondary";
-	extraClassName?: string;
+	className?: string;
 };
 
 const Button: FC<ButtonProps> = ({
 	children,
 	icon,
 	type = "primary",
-	extraClassName,
+	className,
 }) => {
 	return (
 		<button
 			className={`
-                ${extraClassName}
+                ${className}
                 border-2 py-2 px-4 transition-all
                 ${icon ? "" : ""}
                 ${
