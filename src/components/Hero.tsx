@@ -5,9 +5,10 @@ import logoOutline from "../resources/svg/logo-outline.svg";
 import dottedBox from "../resources/svg/dotted-box.svg";
 import { CURRENT_PROYECT } from "@/utils/globals";
 import Button from "./Button";
+import SocialMedia from "./SocialMedia";
 const Hero = () => {
 	return (
-		<div className='grid grid-cols-1 lg:grid-cols-2 lg:items-center min-h-[calc(100dvh-_var(--h-header))] '>
+		<div className='relative grid grid-cols-1 lg:grid-cols-2 lg:items-center min-h-[calc(100dvh-_var(--h-header))] '>
 			<div className='self-end  lg:self-center pb-8 mt-4  lg:mt-[40%] lg:mb-auto lg:w-[150%] z-[1] '>
 				<h2 className='text-lg sm:text-2xl md:text-4xl text-white font-semibold mb-4 lg:mb-8 leading-normal'>
 					[Eduardo |
