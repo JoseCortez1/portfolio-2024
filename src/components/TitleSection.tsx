@@ -6,6 +6,7 @@ type TitleSectionProps = {
 	sufix: ReactNode;
 	className: string;
 };
+
 const TitleSection: FC<Partial<TitleSectionProps>> = ({
 	prefix = null,
 	text = "example",

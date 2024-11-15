@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import logoOutline from "../resources/svg/logo-outline.svg";
 import dottedBox from "../resources/svg/dotted-box.svg";
-import { CURRENT_PROYECT } from "@/utils/globals";
+import { CURRENT_PROYECT } from "../../lib/utils/globals";
 import Button from "./Button";
 
 const Hero = () => {
