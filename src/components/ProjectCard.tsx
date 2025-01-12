@@ -55,7 +55,7 @@ export function ProjectCard({ project }: { project: Project }) {
 						<Button
 							asChild
 							variant="outline"
-							className="bg-transparent border-[#C778DD] text-white hover:bg-[#C778DD]/10 rounded-none">
+							className="bg-transparent border-secondary text-white hover:bg-secondary/10 rounded-none">
 							<Link href={project.liveUrl}>Live {`<~>`}</Link>
 						</Button>
 					)}
