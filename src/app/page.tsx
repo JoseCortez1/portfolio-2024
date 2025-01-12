@@ -1,11 +1,12 @@
-import Hero from "../components/Hero";
-import Projects from "@/components/Projects";
-
+import Hero from "../components/sections/Hero";
+import Projects from "@/components/sections/Projects";
+import Skills from "@/components/sections/Skills";
 export default function Home() {
-  return (
-    <div className="">
-        <Hero />
-        <Projects />
-    </div>
-  );
+	return (
+		<div className="">
+			<Hero />
+			<Projects />
+			<Skills />
+		</div>
+	);
 }
