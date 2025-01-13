@@ -25,7 +25,7 @@ const TitleSection: FC<Partial<TitleSectionProps>> = ({
 			</div>
 			<Link
 				href="/projects"
-				className="text-white hover:text-secondary transition-colors flex items-center gap-2">
+				className="text-white hover:text-secondary transition-colors flex items-center gap-2 flex-shrink-0">
 				{suffix}
 			</Link>
 		</div>
