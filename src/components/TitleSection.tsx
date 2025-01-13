@@ -14,13 +14,14 @@ const TitleSection: FC<Partial<TitleSectionProps>> = ({
 	className,
 }) => {
 	return (
-		<div className={`flex items-center justify-between mb-12 ${className}`}>
-			<div className="flex items-center gap-4">
+		<div
+			className={`flex items-center justify-between mb-12 ${className} w-full`}>
+			<div className="flex items-center gap-4 w-full">
 				<h2 className="text-3xl font-bold text-white">
 					<span className="text-secondary">{prefix}</span>
 					{text}
 				</h2>
-				<div className="h-[1px] bg-secondary w-[50vw]"></div>
+				<div className="h-[1px] bg-secondary w-full max-w-[50vw]"></div>
 			</div>
 			<Link
 				href="/projects"

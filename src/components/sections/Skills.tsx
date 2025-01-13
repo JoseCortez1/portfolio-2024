@@ -50,7 +50,7 @@ const Skills = () => {
 							<h3
 								className={`${color(
 									group?.color
-								)} text-2xl font-bold mb-4 border-b-2 border-gray-400 text-left`}>
+								)} text-base font-bold mb-4  ml-2 py-1 border-b-2 border-gray-400 text-left`}>
 								{group.group}
 							</h3>
 							<div className="">

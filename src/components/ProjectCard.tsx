@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import Button from "./ui/button";
 import { Card } from "@/components/ui/card";
 
 export interface Project {
@@ -52,19 +52,13 @@ export function ProjectCard({ project }: { project: Project }) {
 
 				<div className="flex gap-3">
 					{project.liveUrl && (
-						<Button
-							asChild
-							variant="outline"
-							className="bg-transparent border-secondary text-white hover:bg-secondary/10 rounded-none">
+						<Button type="primary">
 							<Link href={project.liveUrl}>Live {`<~>`}</Link>
 						</Button>
 					)}
 					{project.cacheUrl && (
-						<Button
-							asChild
-							variant="outline"
-							className="bg-transparent border-gray-500 text-gray-500 hover:bg-gray-700/10 hover:text-gray-300 rounded-none">
-							<Link href={project.cacheUrl}>Cached {`>=`}</Link>
+						<Button type="secondary">
+							<Link href={project.cacheUrl || ""}>Cached &gt;=</Link>
 						</Button>
 					)}
 				</div>
