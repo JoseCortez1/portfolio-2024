@@ -30,7 +30,7 @@ const AboutMe = () => {
 			<br />
 			<br />
 			<Button type="primary">
-				<Link href="/about">Read more -&gt;</Link>
+				<Link href="/about">[Read more -&gt;]</Link>
 			</Button>
 		</section>
 	);

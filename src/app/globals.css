@@ -22,6 +22,11 @@
 	}
 }
 
+@media (max-width: 640px) {
+	:root {
+		--h-header: 4rem;
+	}
+}
 body {
 	color: var(--foreground);
 	background: var(--background);
@@ -30,9 +35,4 @@ body {
 
 .container {
 	@apply max-w-6xl mx-auto px-4 md:px-14;
-}
-
-.mansonary {
-	border: 1px solid red;
-	columns: 178px;
 }

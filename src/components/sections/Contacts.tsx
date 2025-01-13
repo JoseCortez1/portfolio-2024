@@ -3,21 +3,21 @@ import BoxItems from "../BoxItems";
 import TitleSection from "../TitleSection";
 const Contacts = () => {
 	return (
-		<section>
-			<div className="flex justify-between">
+		<section className="mt-20">
+			<div className="flex justify-between flex-col md:flex-row gap-10 md:gap-4">
 				<div>
 					<TitleSection prefix="#" text="contacts" />
-					<br />
-					<br />
+					<br className="hidden md:block" />
+					<br className="hidden md:block" />
 					<p>
 						[I’m interested in freelance opportunities. However, if you have
 						other request or question, don’t hesitate to contact me]
 					</p>
 				</div>
-				<div className="w-6/12">
+				<div className="md:w-6/12 md:ml-4">
 					<BoxItems
-						title="Message me here"
-						className="mx-auto w-max"
+						title="[Message me here]"
+						className="mx-auto md:w-max  "
 						items={[
 							<div key={"phone"}>
 								<a

@@ -27,7 +27,7 @@ const Skills = () => {
 			skills: ["Git", "GitHub", "VS Code"],
 		},
 		{
-			group: "Languajes ",
+			group: "Languages ",
 			id: 1,
 			skills: ["Typescript", "Javascript"],
 		},
@@ -35,18 +35,18 @@ const Skills = () => {
 	const color = (apply: boolean | undefined) =>
 		!!apply ? "border-secondary" : "border-gray-400";
 	return (
-		<section className="py-16 px-4 max-w-7xl mx-auto">
+		<section className="py-16  max-w-7xl mx-auto">
 			<TitleSection prefix="#" text="skills" suffix={`View all ~~>`} />
 
-			<div className="grid grid-cols-[35%,auto] direction-[ltr] gap-8">
-				<Image src={boxes} alt="boxes" />
+			<div className="grid  md:grid-cols-[35%,auto] direction-[ltr] gap-8">
+				<Image src={boxes} alt="boxes" className="hidden md:block" />
 				<div className="columns-[178px] " dir="rtl">
 					{skill.map((group) => (
 						<div
 							key={group.id}
 							className={`${color(
 								group?.color
-							)} mb-8 border-2 w-[178px] h-fit break-inside-avoid `}>
+							)} mb-8 border-2 h-fit break-inside-avoid `}>
 							<h3
 								className={`${color(
 									group?.color
