@@ -24,14 +24,14 @@ const Hero = () => {
 				</p>
 				<Button className="my-4 lg:my-8">Contact me!!</Button>
 			</div>
-			<div className="relative flex flex-col justify-end h-full min-h-[40vh] lg:mb-[30%] mt-auto ">
+			<div className="relative flex flex-col justify-end items-end min-h-[40vh] lg:mb-[30%] mt-auto ">
 				<Image
 					src={logoOutline}
 					alt="Logo outline"
-					className="absolute bottom-10 blur-sm md:blur-none md:grayscale-[0.1] left-1/2 w-full h-[60vh]  md:h-[70vh] -translate-x-1/2 -translate-y-1/4  md:translate-y-0 "
+					className="absolute bottom-10 blur-sm md:blur-none md:grayscale-[0.1] left-1/2 md:right-0 md:left-none w-full h-[60vh]  md:h-[50vh] -translate-x-1/2 -translate-y-1/4  md:translate-y-0 "
 				/>
 				<div className="absolute top-0 bottom-0 left-0 right-0 bg-primary/70 md:hidden"></div>
-				<p className="border absolute bottom-10  lg:-bottom-1/2 w-full border-gray-500 flex justify-center  items-center z-[1] bg-primary/70  text-sm py-10">
+				<p className="border absolute top-0 md:top-[inherit] md:bottom-10  lg:-bottom-1/2 w-full border-gray-500 flex justify-center  items-center z-[1] bg-primary/70  text-sm py-10">
 					<span className="bg-secondary inline-block w-4 h-4 mx-2 flex-shrink-0"></span>
 					[Current working on{" "}
 					<Link

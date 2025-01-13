@@ -3,6 +3,7 @@ import "./globals.css";
 import { Fira_Code } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import SocialMedia from "@/components/SocialMedia";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
 	title: "JoseCortez1",
@@ -20,13 +21,13 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang='en'>
+		<html lang="en">
 			<body
-				className={`relative bg-primary w-full h-screen ${fira_code.variable} font-sans`}
-			>
+				className={`relative bg-primary w-full h-screen ${fira_code.variable} font-sans`}>
 				<Navbar />
 				<SocialMedia />
-				<div className='container'>{children}</div>
+				<div className="container">{children}</div>
+				<Footer />
 			</body>
 		</html>
 	);
