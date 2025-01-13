@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import logoOutline from "../../resources/svg/logo-outline.svg";
 import { CURRENT_PROYECT } from "../../lib/globals";
-import Button from "../ui/Button";
+import Button from "../ui/button";
 
 const Hero = () => {
 	return (
