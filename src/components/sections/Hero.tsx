@@ -8,7 +8,7 @@ import Button from "../ui/button";
 const Hero = () => {
 	return (
 		<div className="relative grid grid-cols-1 lg:grid-cols-2 lg:items-center min-h-[calc(100dvh-_var(--h-header))] ">
-			<div className="self-end  lg:self-center pb-8 mt-4  lg:mt-[40%] lg:mb-auto lg:w-[150%] z-[1]  bg-primary/70 md:bg-transparent">
+			<div className="md:self-end  lg:self-center pb-8 mt-10  lg:mt-[40%] lg:mb-auto lg:w-[150%] z-[1]  bg-primary/70 md:bg-transparent">
 				<h2 className="text-lg sm:text-2xl md:text-4xl text-white font-semibold mb-4 lg:mb-8 leading-normal">
 					[Eduardo |
 					<strong className="text-secondary ">Next.js & Nuxt.js</strong>{" "}
@@ -24,14 +24,14 @@ const Hero = () => {
 				</p>
 				<Button className="my-4 lg:my-8">Contact me!!</Button>
 			</div>
-			<div className="relative flex flex-col justify-end items-end min-h-[40vh] lg:mb-[30%] mt-auto ">
+			<div className="relative flex flex-col justify-end items-end min-h-full md:min-h-[40vh] lg:mb-[30%] mt-auto ">
 				<Image
 					src={logoOutline}
 					alt="Logo outline"
 					className="absolute bottom-10 blur-sm md:blur-none md:grayscale-[0.1] left-1/2 md:right-0 md:left-none w-full h-[60vh]  md:h-[50vh] -translate-x-1/2 -translate-y-1/4  md:translate-y-0 "
 				/>
 				<div className="absolute top-0 bottom-0 left-0 right-0 bg-primary/70 md:hidden"></div>
-				<p className="border absolute top-0 md:top-[inherit] md:bottom-10  lg:-bottom-1/2 w-full border-gray-500 flex justify-center  items-center z-[1] bg-primary/70  text-sm py-10">
+				<p className="border absolute -top-3/4 md:top-[inherit] md:bottom-10 h-fit lg:-bottom-1/2 w-full border-gray-500 flex justify-center  items-center z-[1] bg-primary/70  text-sm py-10">
 					<span className="bg-secondary inline-block w-4 h-4 mx-2 flex-shrink-0"></span>
 					[Current working on{" "}
 					<Link

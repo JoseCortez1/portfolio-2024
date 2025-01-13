@@ -26,7 +26,7 @@ const Footer = () => {
 			</div>
 
 			<p className="text-sm py-10 md:py-5 text-center">
-				© Copyright 2022. Made by{" "}
+				© Copyright 2024. Made by{" "}
 				<a href="https://github.com/JoseCortez1">JoseCortez1</a>
 			</p>
 		</footer>
