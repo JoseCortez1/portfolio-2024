@@ -1,6 +1,5 @@
 "use client";
 import React, { FC, useRef, useEffect, useState } from "react";
-import HeaderItem from "./HeaderItem";
 import { NavigationProps } from "../../types";
 
 const Navigation: FC<{ options: NavigationProps[] }> = ({ options }) => {
