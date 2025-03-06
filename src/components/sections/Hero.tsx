@@ -9,7 +9,7 @@ const Hero = () => {
 	return (
 		<div className="relative grid grid-cols-1 lg:grid-cols-2 lg:items-center min-h-[calc(100dvh-_var(--h-header))] ">
 			<div className="md:self-end  lg:self-center pb-8 mt-10  lg:mt-[40%] lg:mb-auto lg:w-[150%] z-[1]  bg-primary/70 md:bg-transparent">
-				<h2 className="text-lg sm:text-2xl md:text-4xl text-white font-semibold mb-4 lg:mb-8 leading-normal">
+				<h2 className="modak-regular text-lg sm:text-2xl md:text-4xl text-white font-semibold mb-4 lg:mb-8 leading-normal">
 					[Eduardo |
 					<strong className="text-secondary ">Next.js & Nuxt.js</strong>{" "}
 					Frontend Developer]

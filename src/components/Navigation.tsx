@@ -69,10 +69,10 @@ const Navigation: FC<{ options: NavigationProps[] }> = ({ options }) => {
 				<ul className='flex flex-col justify-center md:flex-row  md:gap-4'>
 					{options.map((option: NavigationProps) => (
 						<li className='flex gap-4 ' key={option.key}>
-							<HeaderItem
-								{...option}
-								key={`header-${option.key}`}
-							/>
+							<a href={option.link} className={`py-2 text-2xl ${option.active ? 'text-white' : ' text-gray-500 '} `}>
+								<span className='text-secondary font-bold pr-1'>#</span>
+								{option.text}
+							</a>
 						</li>
 					))}
 					{/* 

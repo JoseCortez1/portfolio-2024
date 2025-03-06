@@ -4,9 +4,9 @@ import logo from "../resources/svg/logo-positive.svg";
 import Image from "next/image";
 const Navbar = () => {
 	return (
-		<nav className="container flex items-center justify-between  relative h-[var(--h-header)] bg-primary z-50 pt-8">
+		<nav className="container flex items-center justify-between  relative h-[var(--h-header)] bg-primary/80 z-50 pt-4 p-4">
 			<div className="flex gap-2">
-				<Image src={logo} alt="logo" width={86} height={32} />
+				<Image src={logo} alt="logo" width={186} height={56} />
 			</div>
 			<Navigation
 				options={[
@@ -14,7 +14,7 @@ const Navbar = () => {
 						text: "home",
 						link: "#home",
 						key: "1",
-						active: false,
+						active: true,
 					},
 					{
 						text: "works",

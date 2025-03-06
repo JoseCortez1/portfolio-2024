@@ -1,8 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* 
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');/*
 *,*::after,*::before{
   outline: 1px dotted red;
 } */
@@ -11,7 +10,7 @@
 		--background: #ffffff;
 		--foreground: #171717;
 		--complementary: #abb2bf;
-		--h-header: 3rem;
+		--h-header: 6rem;
 	}
 }
 
@@ -27,6 +26,15 @@
 		--h-header: 4rem;
 	}
 }
+
+
+.modak-regular {
+	font-family: "Modak", system-ui;
+	font-weight: 400;
+	font-style: normal;
+}
+
+
 body {
 	color: var(--foreground);
 	background: var(--background);
